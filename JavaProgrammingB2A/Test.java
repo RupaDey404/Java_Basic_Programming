@@ -1,22 +1,21 @@
-# Java_Basic_Programming
-Java is an object oriented programming language. At first we learn about basic part of languages.
+package JavaProgrammingB2A;
 
-### for two number addition
-```
-public static void sumofTwoDigit(){
-System.out.println("enter the first number");
+import java.util.Scanner;
+
+public class Test {
+    //summation of two Number
+    public static void sumofTwoDigit(){
+        int num1,num2,sum =0;
+        System.out.println("enter the first number");
         Scanner sc = new Scanner(System.in);
         num1 = sc.nextInt();
         System.out.println("enter the second number");
         num2 = sc.nextInt();
         sum = num1 + num2;
         System.out.println("The sum is: " + sum);
-}
-```
-
-### command line argument--Its not clear
-```
-public static void cmdLineArg(String[]args){
+    }
+    //command line argument--Its not clear
+    public static void cmdLineArg(String[]args){
 
         if (args.length > 0) {
             System.out.println(
@@ -28,10 +27,8 @@ public static void cmdLineArg(String[]args){
             System.out.println("No command line "
                     + "arguments found.");
     }
-```
-### swap program without using third variable
-```
-public static void swapTwoNumber(){
+    //swap program with two variables
+    public static void swapTwoNumber(){
         int num1,num2;
         System.out.println("enter the first number");
         Scanner sc = new Scanner(System.in);
@@ -44,11 +41,8 @@ public static void swapTwoNumber(){
 
         System.out.println("Swapper numbers are :" + num1+ " " +num2);
     }
-```
 
-### swap program with bitwise operation.
-```
-public static void swapTwoNumerusingBitwise(){
+    public static void swapTwoNumerusingBitwise(){
         int num1,num2;
         System.out.println("enter the first number");
         Scanner sc = new Scanner(System.in);
@@ -61,11 +55,8 @@ public static void swapTwoNumerusingBitwise(){
         num1 = num1^num2;
         System.out.println("Swapper numbers are :" + num1+ " " +num2);
     }
-```
 
-### swap program with arithmatic operation
-```
-public static void swaptwoNumUsingArithmetaic(){
+    public static void swaptwoNumUsingArithmetaic(){
         int num1,num2;
         System.out.println("enter the first number");
         Scanner sc = new Scanner(System.in);
@@ -75,4 +66,16 @@ public static void swaptwoNumUsingArithmetaic(){
         num1 = (num1+num2) - (num2=num1);
         System.out.println("Swapper numbers are :" + num1+ " " +num2);
     }
-```
+
+    public static void main(String[] args) {
+        //sumofTwoDigit();
+         //cmdLineArg(args);
+         swapTwoNumber();
+        System.out.println("--------------");
+         swapTwoNumerusingBitwise();
+         System.out.println("--------------");
+         swaptwoNumUsingArithmetaic();
+
+//        System.out.println("Hello JavaProgrammingB2A");
+    }
+}
