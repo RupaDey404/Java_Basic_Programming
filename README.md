@@ -76,3 +76,21 @@ public static void swaptwoNumUsingArithmetaic(){
         System.out.println("Swapper numbers are :" + num1+ " " +num2);
     }
 ```
+
+### Two Binary number addition
+```
+public static void addBinaryNum(){
+        String num1, num2;
+       System.out.println("enter the first number");
+        Scanner sc = new Scanner(System.in);
+        num1 = sc.next();
+        System.out.println("enter the second number");
+        num2 = sc.next();
+        int num11 = Integer.parseInt(num1,2);
+        int num22 = Integer.parseInt(num2, 2);
+        int sum = num11 + num22;
+        String result = Integer.toBinaryString(sum);
+       System.out.println("The sum is: " + result);
+
+   }
+```
